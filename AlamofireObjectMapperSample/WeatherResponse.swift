@@ -9,7 +9,7 @@ class WeatherResponse: Mappable {
     }
     
     func mapping(map: Map) {
-        location <- map["data"]
+        location <- map["location"]
         threeDayForecast <- map["three_day_forecast"]
     }
 }
